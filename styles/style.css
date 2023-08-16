@@ -1,4 +1,5 @@
 @import url('https://fonts.cdnfonts.com/css/pokemon-solid');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
 *,
 *::before,
@@ -54,4 +55,48 @@ body {
 .search-button:hover {
     background-color: #2980b9;
 }
+
+/** Card styling **/
+    .pokemon-card {
+        background-color: rgba(255, 255, 255, 0.5);
+        border-radius: 10px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        display: flex;
+        max-width: 500px;
+        margin: 20px auto;
+    }
+
+    .pokemon-name {
+        font-size: 24px;
+        font-family: 'Press Start 2P', cursive;
+    }
+
+    .main-data {
+        padding: 20px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+
+    .pokedex-heading {
+        margin-top: 15px;
+    }
+
+    .pokedex-number {
+        margin-bottom: 10px;
+    }
+
+    .stats-container {
+        margin-top: 5px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+
+    img {
+        max-width: 100px;
+        height: auto;
+        margin-top: 10px;
+        display: block;
+    }
+
+    h2 {
+        color: blue; 
+      }
 
