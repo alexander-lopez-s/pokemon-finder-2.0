@@ -1,6 +1,6 @@
 # Pokemon finder
 
-> A simple
+> Get your Pokémon team according to your birthdate
 
 ## Table of contents
 
@@ -21,7 +21,7 @@
 
 ## Screenshots
 
-![Example screenshot]()
+![Example screenshot](./assets/screenshot.png)
 
 ## Technologies
 
@@ -37,6 +37,18 @@ clone the repo and start using the stop watch.
 ## Code Examples
 
 ```js
+const getPokemonById = async (id) => {
+    const url = `https://pokeapi.co/api/v2/pokemon/${id}/`;
+    try {
+        const response = await fetch(url);
+        const data = await response.json();
+        return data;
+    } catch (err) {
+        console.error(`Error occurred: ${err}`);
+    }
+};
+
+export default getPokemonById;
 
 ```
 
@@ -44,15 +56,12 @@ clone the repo and start using the stop watch.
 
 List of features ready and Todos for future development
 
--
--
--
+- Search pokemon by inputting a birthdate
 
 To-do list:
 
--
--
+- Card animations
 
 ## Status
 
-Project is: _in progress_
+Project is: _Completed_
