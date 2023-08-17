@@ -105,7 +105,8 @@ fetchPokemon(1)
     });
 
 
-
+import handleTimeSelect from "./handlers/handleTimeSelect.js";
+handleTimeSelect();
 
 
 
