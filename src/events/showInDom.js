@@ -2,6 +2,7 @@ import getPromises from "../handlers/getPromises.js";
 import extractValues from "../handlers/extractValues.js";
 import dom from "../dom.js";
 import createCard from "../components/createCard.js";
+import createCardSound from "../handlers/createCardSound.js"
 
 
 const showInDom = () => {
@@ -11,6 +12,7 @@ const showInDom = () => {
         dom.container.innerHTML = '';
         getPromises(ids)
             .then((response) => {
+                createCardSound();
                 response.forEach((data) => {
                     const newCard = createCard(data);
                     dom.container.appendChild(newCard);  
