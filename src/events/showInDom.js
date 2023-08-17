@@ -3,10 +3,12 @@ import extractValues from "../handlers/extractValues.js";
 import dom from "../dom.js";
 import createCard from "../components/createCard.js";
 
+
 const showInDom = () => {
+    
     dom.searchButton.addEventListener('click', () => {
         const ids = extractValues();
-        console.log(ids)
+        dom.container.innerHTML = '';
         getPromises(ids)
             .then((response) => {
                 response.forEach((data) => {

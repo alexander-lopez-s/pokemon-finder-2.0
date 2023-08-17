@@ -3,7 +3,8 @@ const dom = {
      monthSelect : document.getElementById("month"), // january
      yearSelect : document.getElementById("year"), // 2023
      container : document.getElementById("pokemon-cards-container"),
-     searchButton : document.getElementById("search-button")
+     searchButton : document.getElementById("search-button"),
+
 }
 
 export default dom;
