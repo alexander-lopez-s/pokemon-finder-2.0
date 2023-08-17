@@ -1,6 +1,6 @@
 import dom from "../dom.js";
 
-const handleTimeSelect = () => {
+const createTime = () => {
 
 // Populate days
 for (let i = 1; i <= 31; i++) {
@@ -29,4 +29,4 @@ for (let year = 1970; year <= currentYear; year++) {
 }
 }
 
-export default handleTimeSelect;
+export default createTime;
